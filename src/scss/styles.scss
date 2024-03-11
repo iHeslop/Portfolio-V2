@@ -6,6 +6,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+  scroll-behavior: smooth;
 }
 
 ol,
@@ -209,6 +210,7 @@ p {
     opacity: 0.6;
   }
   &-indicator {
+    pointer-events: none;
     opacity: 1;
     span {
       width: 3.2rem;
@@ -218,10 +220,8 @@ p {
 }
 
 .content {
-  padding-top: 100px;
   padding-bottom: 100px;
   text-align: right;
-  white-space: nowrap;
   max-height: 100%;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -229,6 +229,7 @@ p {
     display: none;
   }
   &-projects {
+    padding-top: 100px;
     &-title {
       font-family: "Grand-Slang";
       font-weight: 100;
@@ -279,6 +280,18 @@ p {
           }
         }
       }
+    }
+  }
+  &-about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &-text {
+      font-size: 13px;
+      width: 12rem;
+      letter-spacing: 2px;
+      line-height: 20px;
     }
   }
 }

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
   display: none;
@@ -201,6 +202,7 @@ p {
   opacity: 0.6;
 }
 .nav-indicator {
+  pointer-events: none;
   opacity: 1;
 }
 .nav-indicator span {
@@ -209,16 +211,17 @@ p {
 }
 
 .content {
-  padding-top: 100px;
   padding-bottom: 100px;
   text-align: right;
-  white-space: nowrap;
   max-height: 100%;
   overflow-y: scroll;
   scrollbar-width: none;
 }
 .content::-webkit-scrollbar {
   display: none;
+}
+.content-projects {
+  padding-top: 100px;
 }
 .content-projects-title {
   font-family: "Grand-Slang";
@@ -270,6 +273,18 @@ p {
 .content-projects-section-list-item-info {
   font-family: "Montserrat";
   font-size: 13px;
+}
+.content-about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.content-about-text {
+  font-size: 13px;
+  width: 12rem;
+  letter-spacing: 2px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="./src/js/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -59,28 +60,45 @@
           <nav class="nav-links">
             <ol class="nav-links-list">
               <li>
-                <a href="/" class="nav-links-list-item transition-all">
+                <a
+                  id="navAbout"
+                  href="/#about"
+                  class="nav-links-list-item transition-all nav-indicator"
+                  onclick="updateSection('navAbout')"
+                >
                   <span class="nav-line transition-all"></span>
                   <p>ABOUT</p>
                 </a>
               </li>
               <li>
-                <a href="/projects/" class="nav-links-list-item transition-all">
+                <a
+                  id="navProjects"
+                  href="#projects"
+                  class="nav-links-list-item transition-all"
+                  onclick="updateSection('navProjects')"
+                >
                   <span class="nav-line transition-all"></span>
                   <p>PROJECTS</p>
                 </a>
               </li>
               <li>
                 <a
-                  href="/experience/"
+                  id="navExperience"
+                  href="#experience"
                   class="nav-links-list-item transition-all"
+                  onclick="updateSection('navExperience')"
                 >
                   <span class="nav-line transition-all"></span>
                   <p>EXPERIENCE</p>
                 </a>
               </li>
               <li>
-                <a href="/contact/" class="nav-links-list-item transition-all">
+                <a
+                  id="navContact"
+                  href="#contact"
+                  class="nav-links-list-item transition-all"
+                  onclick="updateSection('navContact')"
+                >
                   <span class="nav-line transition-all"></span>
                   <p>CONTACT</p>
                 </a>
@@ -90,7 +108,18 @@
         </section>
 
         <section class="content">
-          <div class="content-projects">
+          <div id="about" class="content-about">
+            <p class="content-about-text">
+              Born in 1998 in Sydney, Australia. I am passionate about software
+              design and architecture. I endeavour to utilize creative problem
+              solving and design skills to create meaningful and impactful
+              designs. I am constantly learning and striving to better my
+              knowledge and understanding. When I'm not at my computer, I enjoy
+              spending time with friends and family, watching and/or playing
+              sport and listening to music.
+            </p>
+          </div>
+          <div id="projects" class="content-projects">
             <h2 class="content-projects-title">PROJECTS</h2>
             <div class="content-projects-section">
               <h4 class="content-projects-section-heading">Software</h4>
