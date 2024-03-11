@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 
 ol,
@@ -35,6 +39,7 @@ body {
 
 .main-section {
   display: flex;
+  flex-direction: column;
   padding-left: 6rem;
   padding-right: 6rem;
   justify-content: space-between;
@@ -47,10 +52,11 @@ p {
 }
 
 .mask {
+  display: block;
   pointer-events: none;
 }
 .mask-top {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: #ece7e1;
   height: 5%;
@@ -59,9 +65,10 @@ p {
   transition-duration: 0.9s;
   transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
   opacity: 0.8;
+  border-bottom: 1px solid black;
 }
 .mask-bottom {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: #ece7e1;
   height: 5%;
@@ -70,14 +77,16 @@ p {
   transition-duration: 0.9s;
   transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
   opacity: 0.8;
+  border-top: 1px solid black;
 }
 
 .header {
   display: flex;
+  position: fixed;
   flex-direction: column;
   max-height: 100vh;
   width: 50%;
-  padding-top: 18rem;
+  padding-top: 15.5rem;
   padding-bottom: 6rem;
 }
 .header-heading {
@@ -102,22 +111,25 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 30px;
+  padding-top: 4%;
+  padding-bottom: 20px;
   position: fixed;
 }
 .social-icon {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .social-icon__copyright {
   width: 110px;
   position: absolute;
   top: auto;
-  bottom: 3vh;
+  bottom: 13vh;
   transform: rotate(-90deg);
   display: flex;
   gap: 20px;
   align-items: center;
+}
+.social-icon:hover {
+  opacity: 0.35;
 }
 .social-line {
   width: 1px;
@@ -158,20 +170,17 @@ p {
   display: flex;
 }
 .nav-links-list {
-  transform: rotate(-90deg);
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  margin-left: -30px;
-  width: 10rem;
 }
 .nav-links-list-item {
   font-size: 13px;
   letter-spacing: 1px;
   display: flex;
+  gap: 10px;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: left;
   opacity: 0.6;
   margin-top: 20px;
 }
@@ -189,7 +198,6 @@ p {
   background-color: #1a1818;
   height: 1px;
   margin-top: 3px;
-  margin-left: 10px;
   opacity: 0.6;
 }
 .nav-indicator {
@@ -198,6 +206,70 @@ p {
 .nav-indicator span {
   width: 3.2rem;
   opacity: 1;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: right;
+  white-space: nowrap;
+  max-height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.content-projects-title {
+  font-family: "Grand-Slang";
+  font-weight: 100;
+  font-size: 90px;
+  letter-spacing: -1px;
+  padding-right: 10px;
+  color: #1a1818;
+  font-style: italic;
+}
+.content-projects-section {
+  margin-top: 50px;
+}
+.content-projects-section-heading {
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 24px;
+  cursor: default;
+}
+.content-projects-section-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 15px;
+}
+.content-projects-section-list-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: 30px;
+}
+.content-projects-section-list-item:hover {
+  opacity: 0.4;
+}
+.content-projects-section-list-item-title {
+  font-family: "Grand-Slang";
+  text-align: right;
+  font-size: 44px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-right: 8px;
+}
+.content-projects-section-list-item-title:hover {
+  font-style: italic;
+}
+.content-projects-section-list-item-info {
+  font-family: "Montserrat";
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=styles.css.map */

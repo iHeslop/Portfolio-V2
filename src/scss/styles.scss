@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 ol,
@@ -40,6 +44,7 @@ body {
 
 .main-section {
   display: flex;
+  flex-direction: column;
   padding-left: 6rem;
   padding-right: 6rem;
   justify-content: space-between;
@@ -52,9 +57,10 @@ p {
 }
 
 .mask {
+  display: block;
   pointer-events: none;
   &-top {
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: $-c-bg;
     height: 5%;
@@ -63,9 +69,10 @@ p {
     transition-duration: 0.9s;
     transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
     opacity: 0.8;
+    border-bottom: 1px solid black;
   }
   &-bottom {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: $-c-bg;
     height: 5%;
@@ -74,15 +81,17 @@ p {
     transition-duration: 0.9s;
     transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
     opacity: 0.8;
+    border-top: 1px solid black;
   }
 }
 
 .header {
   display: flex;
+  position: fixed;
   flex-direction: column;
   max-height: 100vh;
   width: 50%;
-  padding-top: 18rem;
+  padding-top: 15.5rem;
   padding-bottom: 6rem;
   &-heading {
     font-family: "Montserrat";
@@ -108,21 +117,24 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 30px;
+    padding-top: 4%;
+    padding-bottom: 20px;
     position: fixed;
   }
   &-icon {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     &__copyright {
       width: 110px;
       position: absolute;
       top: auto;
-      bottom: 3vh;
+      bottom: 13vh;
       transform: rotate(-90deg);
       display: flex;
       gap: 20px;
       align-items: center;
+    }
+    &:hover {
+      opacity: 0.35;
     }
   }
   &-line {
@@ -165,19 +177,16 @@ p {
   &-links {
     display: flex;
     &-list {
-      transform: rotate(-90deg);
       display: flex;
       flex-direction: column;
-      margin-top: 30px;
-      margin-left: -30px;
-      width: 10rem;
       &-item {
         font-size: 13px;
         letter-spacing: 1px;
         display: flex;
+        gap: 10px;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: left;
         opacity: 0.6;
         margin-top: 20px;
         &:hover {
@@ -197,7 +206,6 @@ p {
     background-color: $-c-txt;
     height: 1px;
     margin-top: 3px;
-    margin-left: 10px;
     opacity: 0.6;
   }
   &-indicator {
@@ -205,6 +213,72 @@ p {
     span {
       width: 3.2rem;
       opacity: 1;
+    }
+  }
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: right;
+  white-space: nowrap;
+  max-height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &-projects {
+    &-title {
+      font-family: "Grand-Slang";
+      font-weight: 100;
+      font-size: 90px;
+      letter-spacing: -1px;
+      padding-right: 10px;
+      color: $-c-txt;
+      font-style: italic;
+    }
+    &-section {
+      margin-top: 50px;
+      &-heading {
+        font-family: "Montserrat";
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 24px;
+        cursor: default;
+      }
+      &-list {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 15px;
+        &-item {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-start;
+          align-items: baseline;
+          column-gap: 30px;
+          &:hover {
+            opacity: 0.4;
+          }
+          &-title {
+            font-family: "Grand-Slang";
+            text-align: right;
+            font-size: 44px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            padding-right: 8px;
+            &:hover {
+              font-style: italic;
+            }
+          }
+          &-info {
+            font-family: "Montserrat";
+            font-size: 13px;
+          }
+        }
+      }
     }
   }
 }
