@@ -18,11 +18,11 @@
   </head>
   <body>
     <main>
-      <section class="mask">
+      <div class="mask">
         <div class="mask-top"></div>
         <div class="mask-bottom"></div>
-      </section>
-      <section class="social-links">
+      </div>
+      <div class="social-links">
         <div class="social-icon">
           <a href="https://www.linkedin.com/in/isaac-heslop/" target="_blank">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -49,10 +49,10 @@
             <button class="theme__dark"></button>
           </div>
         </div>
-      </section>
+      </div>
 
       <div class="main-section">
-        <section class="header">
+        <div class="header">
           <div>
             <h1 class="header-heading">ISAAC HESLOP</h1>
             <p class="header-text">Software Developer and Architect</p>
@@ -62,9 +62,8 @@
               <li>
                 <a
                   id="navAbout"
-                  href="/#about"
+                  href="#about"
                   class="nav-links-list-item transition-all nav-indicator"
-                  onclick="updateSection('navAbout')"
                 >
                   <span class="nav-line transition-all"></span>
                   <p>ABOUT</p>
@@ -75,7 +74,6 @@
                   id="navProjects"
                   href="#projects"
                   class="nav-links-list-item transition-all"
-                  onclick="updateSection('navProjects')"
                 >
                   <span class="nav-line transition-all"></span>
                   <p>PROJECTS</p>
@@ -86,7 +84,6 @@
                   id="navExperience"
                   href="#experience"
                   class="nav-links-list-item transition-all"
-                  onclick="updateSection('navExperience')"
                 >
                   <span class="nav-line transition-all"></span>
                   <p>EXPERIENCE</p>
@@ -97,7 +94,6 @@
                   id="navContact"
                   href="#contact"
                   class="nav-links-list-item transition-all"
-                  onclick="updateSection('navContact')"
                 >
                   <span class="nav-line transition-all"></span>
                   <p>CONTACT</p>
@@ -105,10 +101,10 @@
               </li>
             </ol>
           </nav>
-        </section>
+        </div>
 
-        <section class="content">
-          <div id="about" class="content-about">
+        <div class="content">
+          <section id="about" class="content-about">
             <p class="content-about-text">
               Born in 1998 in Sydney, Australia. I am passionate about software
               design and architecture. I endeavour to utilize creative problem
@@ -118,8 +114,9 @@
               spending time with friends and family, watching and/or playing
               sport and listening to music.
             </p>
-          </div>
-          <div id="projects" class="content-projects">
+          </section>
+
+          <section id="projects" class="content-projects">
             <h2 class="content-projects-title">PROJECTS</h2>
             <div class="content-projects-section">
               <h4 class="content-projects-section-heading">Software</h4>
@@ -271,8 +268,9 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div id="experience" class="content-experience">
+          </section>
+
+          <section id="experience" class="content-experience">
             <h2 class="content-experience-title">EXPERIENCE</h2>
             <div class="content-experience-section">
               <h4 class="content-experience-section-heading">Occupation</h4>
@@ -429,9 +427,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="contact" class="content-contact">
+          <section id="contact" class="content-contact">
             <div class="contact">
               <div class="contact-item">
                 <div class="contact-content">
@@ -503,8 +501,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
   </body>

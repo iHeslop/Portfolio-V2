@@ -1,23 +1,40 @@
-function updateSection(section) {
-  let prev = document.querySelector(".nav-indicator");
-  prev.classList.remove("nav-indicator");
-  let curr = document.getElementById(section);
-  curr.classList.add("nav-indicator");
-}
-
-function displayText(a) {
-  let b = document.getElementById(a + "Text");
-  console.log(b);
-  b.classList.contains("_show")
-    ? ((b.style.opacity = "0"),
+function displayText(txt) {
+  let curr = document.getElementById(txt + "Text");
+  curr.classList.contains("_show")
+    ? ((curr.style.opacity = "0"),
       setTimeout(function () {
-        (b.style.display = "none"), b.classList.remove("_show");
+        (curr.style.display = "none"), curr.classList.remove("_show");
       }, 500))
-    : ((b.style.display = "block"),
+    : ((curr.style.display = "block"),
       setTimeout(function () {
-        (b.style.opacity = "0.75"), b.classList.add("_show");
+        (curr.style.opacity = "0.75"), curr.classList.add("_show");
       }, 10),
       setTimeout(function () {
-        (b.style.opacity = "0"), b.classList.remove("_show");
+        (curr.style.opacity = "0"), curr.classList.remove("_show");
       }, 2e3));
 }
+
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll(".nav-links-list-item");
+
+let options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
+
+let observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      let id = entry.target.getAttribute("id");
+      navLinks.forEach((link) => {
+        link.classList.remove("nav-indicator");
+      });
+      document.querySelector(`[href="#${id}"]`).classList.add("nav-indicator");
+    }
+  });
+}, options);
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
