@@ -211,7 +211,6 @@ p {
 }
 
 .content {
-  padding-bottom: 100px;
   text-align: right;
   max-height: 100%;
   overflow-y: scroll;
@@ -222,6 +221,7 @@ p {
 }
 .content-projects {
   padding-top: 100px;
+  padding-bottom: 150px;
 }
 .content-projects-title {
   font-family: "Grand-Slang";
@@ -285,6 +285,129 @@ p {
   width: 12rem;
   letter-spacing: 2px;
   line-height: 20px;
+}
+.content-experience {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.content-experience-title {
+  font-family: "Grand-Slang";
+  font-weight: 100;
+  font-size: 90px;
+  letter-spacing: -1px;
+  padding-right: 10px;
+  color: #1a1818;
+  font-style: italic;
+}
+.content-experience-section {
+  margin-top: 50px;
+}
+.content-experience-section-heading {
+  font-family: "Montserrat";
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 24px;
+  cursor: default;
+}
+.content-experience-section-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 15px;
+}
+.content-experience-section-list-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: 30px;
+  pointer-events: none;
+}
+.content-experience-section-list-item-title {
+  font-family: "Grand-Slang";
+  text-align: right;
+  font-size: 44px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-right: 8px;
+}
+.content-experience-section-list-item-info {
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+.content-experience-images {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.content-experience-container {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+.content-experience-container-image {
+  height: 4em;
+  width: 4em;
+}
+.content-experience-container-image:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.content-experience-container-info {
+  position: absolute;
+  display: none;
+  font-family: "Montserrat";
+  margin-top: 5px;
+  bottom: -22px;
+  width: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  text-align: center;
+}
+.content-contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25vh;
+  justify-content: center;
+}
+.contact-title {
+  font-family: "Grand-Slang";
+  font-weight: 100;
+  font-size: 90px;
+  letter-spacing: -1px;
+  padding-right: 10px;
+  color: #1a1818;
+  font-style: italic;
+}
+.contact-content {
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+.contact-content ul li a:hover {
+  opacity: 0.5;
+}
+.contact-item-2 {
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
