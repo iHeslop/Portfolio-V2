@@ -18,9 +18,23 @@
   </head>
   <body>
     <main>
+      <div class="enterView">
+        <div class="enterView-text enterView-text__1">Isaac Heslop</div>
+        <img
+          class="enterView-image"
+          src="/assets/logo/logo-black.png"
+          alt="logo"
+        />
+        <div class="enterView-text enterView-text__2">Portfolio</div>
+      </div>
+
       <div class="mask">
-        <div class="mask-top"></div>
-        <div class="mask-bottom"></div>
+        <div class="mask-top">
+          <div class="fadingEffect"></div>
+        </div>
+        <div class="mask-bottom">
+          <div class="fadingEffect fadingEffect-bottom"></div>
+        </div>
       </div>
       <div class="social-links">
         <div class="social-icon">
@@ -45,8 +59,11 @@
         <div class="social-icon__copyright">
           <p class="copyright">&copy;/2024</p>
           <div class="theme">
-            <button class="theme__light"></button>
-            <button class="theme__dark"></button>
+            <button
+              class="theme__light"
+              onclick="changeTheme('light')"
+            ></button>
+            <button class="theme__dark" onclick="changeTheme('dark')"></button>
           </div>
         </div>
       </div>
@@ -104,8 +121,8 @@
         </div>
 
         <div class="content">
-          <section id="about" class="content-about">
-            <p class="content-about-text">
+          <section id="about" class="about">
+            <p class="about-text">
               Born in 1998 in Sydney, Australia. I am passionate about software
               design and architecture. I endeavour to utilize creative problem
               solving and design skills to create meaningful and impactful
@@ -116,153 +133,125 @@
             </p>
           </section>
 
-          <section id="projects" class="content-projects">
-            <h2 class="content-projects-title">PROJECTS</h2>
-            <div class="content-projects-section">
-              <h4 class="content-projects-section-heading">Software</h4>
-              <div class="content-projects-section-list">
+          <section id="projects" class="projects">
+            <h2 class="projects-title">PROJECTS</h2>
+            <div class="projects-section">
+              <h4 class="projects-heading">Software</h4>
+              <div class="projects-list">
                 <a
-                  class="content-projects-section-list-item text-btn"
+                  class="projects-item"
                   href="https://asquithlegal.com.au/"
                   target="_blank"
                 >
-                  <div class="content-projects-section-list-item-title">
-                    Asquith Legal
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                  <div class="projects-item-title">Asquith Legal</div>
+                  <div class="projects-item-info">
                     2024 // Commission // Private
                   </div>
                 </a>
                 <a
-                  class="content-projects-section-list-item text-btn"
+                  class="projects-item"
                   href="https://mirage-corporation.onrender.com"
                   target="_blank"
                 >
-                  <div class="content-projects-section-list-item-title">
-                    Mirage Corporation
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                  <div class="projects-item-title">Mirage Corporation</div>
+                  <div class="projects-item-info">
                     2024 // Website // Personal
                   </div>
                 </a>
                 <a
-                  class="content-projects-section-list-item text-btn"
+                  class="projects-item"
                   href="https://flytinerary.onrender.com/"
                   target="_blank"
                 >
-                  <div class="content-projects-section-list-item-title">
-                    FlyTinerary
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                  <div class="projects-item-title">FlyTinerary</div>
+                  <div class="projects-item-info">
                     2023 // Capstone // Institute of Data
                   </div>
                 </a>
                 <a
-                  class="content-projects-section-list-item text-btn"
+                  class="projects-item"
                   href="http://kidsplan-it.com.au/"
                   target="_blank"
                 >
-                  <div class="content-projects-section-list-item-title">
-                    Kids Plan-It
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                  <div class="projects-item-title">Kids Plan-It</div>
+                  <div class="projects-item-info">
                     2023 // Commission // Private
                   </div>
                 </a>
                 <a
-                  class="content-projects-section-list-item text-btn"
+                  class="projects-item"
                   href="https://honour-abyss.onrender.com/"
                   target="_blank"
                 >
-                  <div class="content-projects-section-list-item-title">
-                    Honour Abyss
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                  <div class="projects-item-title">Honour Abyss</div>
+                  <div class="projects-item-info">
                     2022 // Tutorial // Personal
                   </div>
                 </a>
               </div>
             </div>
-            <div class="content-projects-section">
-              <h4 class="content-projects-section-heading">Architecture</h4>
-              <div class="content-projects-section-list">
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Winter Sports World
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+            <div class="projects">
+              <h4 class="projects-heading">Architecture</h4>
+              <div class="projects-list">
+                <div class="projects-item">
+                  <div class="projects-item-title">Winter Sports World</div>
+                  <div class="projects-item-info">
                     2021-2023 // Environa Studio // Private
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Norfolk Residences
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Norfolk Residences</div>
+                  <div class="projects-item-info">
                     2021-2022 // Environa Studio // Private
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Narrabeen
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Narrabeen</div>
+                  <div class="projects-item-info">
                     2020-2022 // Environa Studio // Private
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Elizabeth Bay
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Elizabeth Bay</div>
+                  <div class="projects-item-info">
                     2020-2022 // Environa Studio // Private
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Coogee
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Coogee</div>
+                  <div class="projects-item-info">
                     2020-2021 // Environa Studio // Private
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Portman Street
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Portman Street</div>
+                  <div class="projects-item-info">
                     2020-2021 // Environa Studio // Private
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Transitions
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Transitions</div>
+                  <div class="projects-item-info">
                     2019 // University of Sydney // Portfolio
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Urban Oasis
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Urban Oasis</div>
+                  <div class="projects-item-info">
                     2019 // University of Sydney // Portfolio
                   </div>
                 </div>
 
-                <div class="content-projects-section-list-item text-btn">
-                  <div class="content-projects-section-list-item-title">
-                    Stanmore Housing
-                  </div>
-                  <div class="content-projects-section-list-item-info">
+                <div class="projects-item">
+                  <div class="projects-item-title">Stanmore Housing</div>
+                  <div class="projects-item-info">
                     2018 // University of Sydney // Portfolio
                   </div>
                 </div>
@@ -270,157 +259,138 @@
             </div>
           </section>
 
-          <section id="experience" class="content-experience">
-            <h2 class="content-experience-title">EXPERIENCE</h2>
-            <div class="content-experience-section">
-              <h4 class="content-experience-section-heading">Occupation</h4>
-              <div class="content-experience-section-list">
-                <div class="content-experience-section-list-item">
-                  <div class="content-experience-section-list-item-title">
+          <section id="experience" class="experience">
+            <h2 class="experience-title">EXPERIENCE</h2>
+            <div class="experience-section">
+              <h4 class="experience-heading">Occupation</h4>
+              <div class="experience-list">
+                <div class="experience-item">
+                  <div class="experience-item-title">
                     Junior Software Engineer
                   </div>
-                  <div class="content-experience-section-list-item-info">
-                    2024 // _nology
-                  </div>
+                  <div class="experience-item-info">2024 // _nology</div>
                 </div>
-                <div class="content-experience-section-list-item">
-                  <div class="content-experience-section-list-item-title">
-                    Architect
-                  </div>
-                  <div class="content-experience-section-list-item-info">
+                <div class="experience-item">
+                  <div class="experience-item-title">Architect</div>
+                  <div class="experience-item-info">
                     2020-2023 // Environa Studio
                   </div>
                 </div>
               </div>
-              <h4 class="content-experience-section-heading">Education</h4>
-              <div class="content-experience-section-list">
-                <div class="content-experience-section-list-item">
-                  <div class="content-experience-section-list-item-title">
+              <h4 class="experience-heading">Education</h4>
+              <div class="experience-list">
+                <div class="experience-item">
+                  <div class="experience-item-title">
                     Software Engineering Accreditation
                   </div>
-                  <div class="content-experience-section-list-item-info">
+                  <div class="experience-item-info">
                     2022-2023 // UTS + Institute of Data
                   </div>
                 </div>
-                <div class="content-experience-section-list-item">
-                  <div class="content-experience-section-list-item-title">
+                <div class="experience-item">
+                  <div class="experience-item-title">
                     Bachelor of Design in Architecture
                   </div>
-                  <div class="content-experience-section-list-item-info">
+                  <div class="experience-item-info">
                     2017-2020 // University of Sydney
                   </div>
                 </div>
               </div>
-              <h4 class="content-experience-section-heading">Technologies</h4>
-              <div class="content-experience-section-list">
-                <div class="content-experience-images hidden-item">
-                  <div class="content-experience-container">
+              <h4 class="experience-heading">Technologies</h4>
+              <div class="experience-list">
+                <div class="experience-images hidden-item">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-alpine"
+                      class="experience-container-image exp-alpine"
                       src="/assets/tech/alpine-black.png"
                       alt="alpine"
                       onclick="displayText('alpine')"
                     />
-                    <div
-                      class="content-experience-container-info"
-                      id="alpineText"
-                    >
+                    <div class="experience-container-info" id="alpineText">
                       AlpineJS
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-css"
+                      class="experience-container-image exp-css"
                       src="/assets/tech/css-black.png"
                       alt="css"
                       onclick="displayText('css')"
                     />
-                    <div class="content-experience-container-info" id="cssText">
+                    <div class="experience-container-info" id="cssText">
                       CSS
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-docker"
+                      class="experience-container-image exp-docker"
                       src="/assets/tech/docker-black.png"
                       alt="docker"
                       onclick="displayText('docker')"
                     />
-                    <div
-                      class="content-experience-container-info"
-                      id="dockerText"
-                    >
+                    <div class="experience-container-info" id="dockerText">
                       Docker
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-git"
+                      class="experience-container-image exp-git"
                       src="/assets/tech/git-black.png"
                       alt="git"
                       onclick="displayText('git')"
                     />
-                    <div class="content-experience-container-info" id="gitText">
+                    <div class="experience-container-info" id="gitText">
                       Git
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-html"
+                      class="experience-container-image exp-html"
                       src="/assets/tech/html-black.png"
                       alt="html"
                       onclick="displayText('html')"
                     />
-                    <div
-                      class="content-experience-container-info"
-                      id="htmlText"
-                    >
+                    <div class="experience-container-info" id="htmlText">
                       HTML
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-js"
+                      class="experience-container-image exp-js"
                       src="/assets/tech/javascript-black.png"
                       alt="javascript"
                       onclick="displayText('js')"
                     />
-                    <div class="content-experience-container-info" id="jsText">
+                    <div class="experience-container-info" id="jsText">
                       JavaScript
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-node"
+                      class="experience-container-image exp-node"
                       src="/assets/tech/nodejs-black.png"
                       alt="node"
                       onclick="displayText('node')"
                     />
-                    <div
-                      class="content-experience-container-info"
-                      id="nodeText"
-                    >
+                    <div class="experience-container-info" id="nodeText">
                       NodeJS
                     </div>
                   </div>
 
-                  <div class="content-experience-container">
+                  <div class="experience-container">
                     <img
-                      class="content-experience-container-image exp-react"
+                      class="experience-container-image exp-react"
                       src="/assets/tech/reactjs-black.png"
                       alt="react"
                       onclick="displayText('react')"
                     />
-                    <div
-                      class="content-experience-container-info"
-                      id="reactText"
-                    >
+                    <div class="experience-container-info" id="reactText">
                       ReactJS
                     </div>
                   </div>
@@ -429,7 +399,7 @@
             </div>
           </section>
 
-          <section id="contact" class="content-contact">
+          <section id="contact" class="contact">
             <div class="contact">
               <div class="contact-item">
                 <div class="contact-content">

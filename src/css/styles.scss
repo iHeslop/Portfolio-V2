@@ -19,11 +19,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --c-bg: #ece7e1;
-  --c-txt: #1a1818;
-}
-
 @font-face {
   font-family: "Grand-Slang";
   src: url("/assets/font/GrandSlang-Roman.ttf");
@@ -39,8 +34,8 @@ a {
 }
 
 body {
-  background-color: var(--c-bg);
-  color: var(--c-txt);
+  background-color: #ece7e1;
+  color: #1a1818;
 }
 
 .main-section {
@@ -57,46 +52,6 @@ p {
   font-family: "Montserrat";
 }
 
-.enterView {
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  will-change: opacity;
-  background-color: var(--c-bg);
-  color: var(--c-txt);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  gap: 400px;
-}
-.enterView-image {
-  display: block;
-  margin: 0 auto;
-  max-width: 25%;
-  max-height: 25%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.enterView-text {
-  font-family: "Montserrat";
-}
-.enterView-text__1 {
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-.enterView-text__2 {
-  padding-right: 90px;
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-
 .mask {
   display: block;
   pointer-events: none;
@@ -104,32 +59,31 @@ p {
 .mask-top {
   position: fixed;
   top: 0;
-  background-color: var(--c-bg);
+  background-color: #ece7e1;
   height: 5%;
   width: 100%;
   transition-property: background-color;
   transition-duration: 0.9s;
   transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
   opacity: 0.8;
-  border-bottom: 1px solid var(--c-txt);
-  z-index: 1;
+  border-bottom: 1px solid black;
+  z-index: 999;
 }
 .mask-bottom {
   position: fixed;
   bottom: 0;
-  background-color: var(--c-bg);
+  background-color: #ece7e1;
   height: 5%;
   width: 100%;
   transition-property: background-color;
   transition-duration: 0.9s;
   transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
   opacity: 0.8;
-  border-top: 1px solid var(--c-txt);
-  z-index: 1;
+  border-top: 1px solid black;
+  z-index: 999;
 }
 
 .header {
-  z-index: 1;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -183,7 +137,7 @@ p {
 .social-line {
   width: 1px;
   height: 50%;
-  background-color: var(--c-txt);
+  background-color: #1a1818;
   margin-top: 10px;
   margin-bottom: 80px;
 }
@@ -244,7 +198,7 @@ p {
 .nav-line {
   display: block;
   width: 2rem;
-  background-color: var(--c-txt);
+  background-color: #1a1818;
   height: 1px;
   margin-top: 3px;
   opacity: 0.6;
@@ -267,48 +221,47 @@ p {
 .content::-webkit-scrollbar {
   display: none;
 }
-
-.projects {
+.content-projects {
   padding-top: 100px;
   padding-bottom: 150px;
 }
-.projects-title {
+.content-projects-title {
   font-family: "Grand-Slang";
   font-weight: 100;
   font-size: 90px;
   letter-spacing: -1px;
   padding-right: 10px;
-  color: var(--c-txt);
+  color: #1a1818;
   font-style: italic;
 }
-.projects-section {
+.content-projects-section {
   margin-top: 50px;
 }
-.projects-heading {
+.content-projects-section-heading {
   font-family: "Montserrat";
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 24px;
   cursor: default;
 }
-.projects-list {
+.content-projects-section-list {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   row-gap: 15px;
 }
-.projects-item {
+.content-projects-section-list-item {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: baseline;
   column-gap: 30px;
 }
-.projects-item:hover {
+.content-projects-section-list-item:hover {
   opacity: 0.4;
 }
-.projects-item-title {
+.content-projects-section-list-item-title {
   font-family: "Grand-Slang";
   text-align: right;
   font-size: 44px;
@@ -316,48 +269,49 @@ p {
   letter-spacing: 2px;
   padding-right: 8px;
 }
-.projects-item-title:hover {
+.content-projects-section-list-item-title:hover {
   font-style: italic;
 }
-.projects-item-info {
+.content-projects-section-list-item-info {
   font-family: "Montserrat";
   font-size: 13px;
 }
-
-.about {
+.content-about {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  opacity: 0;
-  animation: fadeIn 0.8s ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
 }
-.about-text {
+.content-about-text {
   font-size: 13px;
   width: 12rem;
   letter-spacing: 2px;
   line-height: 20px;
 }
-
-.experience {
+.content-experience {
   padding-top: 100px;
   padding-bottom: 150px;
 }
-.experience-title {
+.content-experience-title {
   font-family: "Grand-Slang";
   font-weight: 100;
   font-size: 90px;
   letter-spacing: -1px;
   padding-right: 10px;
-  color: var(--c-txt);
+  color: #1a1818;
   font-style: italic;
 }
-.experience-section {
+.content-experience-section {
   margin-top: 50px;
 }
-.experience-list {
+.content-experience-section-heading {
+  font-family: "Montserrat";
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 24px;
+  cursor: default;
+}
+.content-experience-section-list {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
@@ -365,7 +319,7 @@ p {
   align-items: flex-end;
   row-gap: 15px;
 }
-.experience-item {
+.content-experience-section-list-item {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
@@ -373,7 +327,7 @@ p {
   column-gap: 30px;
   pointer-events: none;
 }
-.experience-item-title {
+.content-experience-section-list-item-title {
   font-family: "Grand-Slang";
   text-align: right;
   font-size: 44px;
@@ -381,39 +335,32 @@ p {
   letter-spacing: 2px;
   padding-right: 8px;
 }
-.experience-item-info {
+.content-experience-section-list-item-info {
   font-family: "Montserrat";
   font-size: 13px;
 }
-.experience-heading {
-  font-family: "Montserrat";
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 24px;
-  cursor: default;
-}
-.experience-images {
+.content-experience-images {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
   gap: 40px;
 }
-.experience-container {
+.content-experience-container {
   display: inline-block;
   position: relative;
   text-align: center;
   width: auto;
 }
-.experience-container-image {
+.content-experience-container-image {
   height: 4em;
   width: 4em;
 }
-.experience-container-image:hover {
+.content-experience-container-image:hover {
   opacity: 0.75;
   cursor: pointer;
 }
-.experience-container-info {
+.content-experience-container-info {
   position: absolute;
   display: none;
   font-family: "Montserrat";
@@ -429,13 +376,19 @@ p {
   opacity: 0;
   text-align: center;
 }
-
-.contact {
+.content-contact {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 25vh;
   justify-content: center;
 }
@@ -445,7 +398,7 @@ p {
   font-size: 90px;
   letter-spacing: -1px;
   padding-right: 10px;
-  color: var(--c-txt);
+  color: #1a1818;
   font-style: italic;
 }
 .contact-content {
@@ -459,38 +412,4 @@ p {
   padding-top: 50px;
 }
 
-.fadingEffect {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 110%;
-  width: 100%;
-  background: var(--c-bg);
-  animation: showHide 2s ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-.fadingEffect-bottom {
-  top: -2px;
-}
-
-/* ANIMATIONS */
-@keyframes showHide {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */
