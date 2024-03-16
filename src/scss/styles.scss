@@ -105,10 +105,11 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
   }
   &-text {
     font-family: "Montserrat";
-
+    opacity: 0;
     &__1 {
       font-weight: 400;
       letter-spacing: 3px;
@@ -713,6 +714,9 @@ p {
         padding-top: 0;
       }
     }
+  }
+  &-link {
+    padding-top: 20px;
   }
 }
 

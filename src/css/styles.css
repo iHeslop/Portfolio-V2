@@ -110,9 +110,11 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 .enterView-text {
   font-family: "Montserrat";
+  opacity: 0;
 }
 .enterView-text__1 {
   font-weight: 400;
@@ -817,6 +819,9 @@ p {
   .contact-item-2 {
     padding-top: 0;
   }
+}
+.contact-link {
+  padding-top: 20px;
 }
 
 .fadingEffect {

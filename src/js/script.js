@@ -48,7 +48,17 @@ function delay(ms) {
 async function enter() {
   const enterView = document.querySelector(".enterView"),
     text1 = enterView.querySelector(".enterView-text__1"),
-    text2 = enterView.querySelector(".enterView-text__2");
+    text2 = enterView.querySelector(".enterView-text__2"),
+    image = enterView.querySelector(".enterView-image");
+
+  await delay(1500);
+  text1.style.transition = "opacity 0.8s";
+  text2.style.transition = "opacity 0.8s";
+  image.style.transition = "opacity 0.5s";
+
+  text1.style.opacity = 1;
+  text2.style.opacity = 1;
+  image.style.opacity = 1;
 
   await delay(1500);
 
