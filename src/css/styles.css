@@ -443,7 +443,7 @@ p {
   opacity: 0;
   animation: fadeIn 0.8s ease-in;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 .about-text {
   font-size: 13px;
@@ -834,7 +834,7 @@ p {
   background: var(--c-bg);
   animation: showHide 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 .fadingEffect-bottom {
   top: -2px;

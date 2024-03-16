@@ -51,7 +51,7 @@ async function enter() {
     text2 = enterView.querySelector(".enterView-text__2"),
     image = enterView.querySelector(".enterView-image");
 
-  await delay(1500);
+  await delay(1000);
   text1.style.transition = "opacity 0.8s";
   text2.style.transition = "opacity 0.8s";
   image.style.transition = "opacity 0.5s";

@@ -403,7 +403,7 @@ p {
   opacity: 0;
   animation: fadeIn 0.8s ease-in;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 4s;
   &-text {
     font-size: 13px;
     width: 12rem;
@@ -730,7 +730,7 @@ p {
   background: var(--c-bg);
   animation: showHide 2s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
   &-bottom {
     top: -2px;
   }
