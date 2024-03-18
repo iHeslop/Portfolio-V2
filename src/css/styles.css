@@ -476,6 +476,43 @@ p {
     padding-top: 100px;
   }
 }
+.projects-container {
+  display: none;
+  flex-direction: column;
+  justify-content: right;
+  width: 60%;
+  height: auto;
+  border: 1px solid var(--c-txt);
+  padding: 1rem;
+  animation: fadeIn 0.8s ease-in;
+}
+@media only screen and (max-width: 768px) {
+  .projects-container {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .projects-container {
+    width: 100%;
+    height: auto;
+  }
+}
+.projects-image {
+  height: 80%;
+}
+.projects-text {
+  margin-top: 2%;
+  padding-left: 20%;
+  width: 100%;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .projects-text {
+    font-size: 11px;
+    padding-left: 0;
+  }
+}
 .projects-title {
   font-family: "Grand-Slang";
   font-weight: 100;
@@ -544,6 +581,7 @@ p {
   }
 }
 .projects-item:hover {
+  cursor: pointer;
   opacity: 0.4;
 }
 .projects-item-title {

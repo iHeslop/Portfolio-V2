@@ -36,6 +36,7 @@
           <div class="fadingEffect fadingEffect-bottom"></div>
         </div>
       </div>
+
       <div class="social-links">
         <div class="social-icon">
           <a href="https://www.linkedin.com/in/isaac-heslop/" target="_blank">
@@ -193,67 +194,213 @@
             <div class="projects">
               <h4 class="projects-heading">Architecture</h4>
               <div class="projects-list">
-                <div class="projects-item">
+                <div class="projects-item" onclick="displayProject('wsw')">
                   <div class="projects-item-title">Winter Sports World</div>
                   <div class="projects-item-info">
                     2021-2023 // Environa Studio // Private
                   </div>
                 </div>
+                <div class="projects-container" id="project-wsw">
+                  <img
+                    class="projects-image"
+                    id="wswImage"
+                    src="./assets/projects/project_wsw.jpg"
+                    alt="wsw"
+                  />
+                  <p class="projects-text">
+                    Winter Sports World is completely unique in both design and
+                    purpose, and smart design principles and innovation have
+                    been used to create an incredible architectural statement.
+                    The building is a world-first in sustainable innovation.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div class="projects-item" onclick="displayProject('norfolk')">
                   <div class="projects-item-title">Norfolk Residences</div>
                   <div class="projects-item-info">
                     2021-2022 // Environa Studio // Private
                   </div>
                 </div>
+                <div class="projects-container" id="project-norfolk">
+                  <img
+                    class="projects-image"
+                    id="norfolkImage"
+                    src="./assets/projects/project_norfolk.jpg"
+                    alt="norfolk"
+                  />
+                  <p class="projects-text">
+                    Norfolk Residences presents a rare collection of just 10
+                    luxurious apartments and townhomes, meticulously designed
+                    and beautifully appointed for downsizers and those seeking
+                    to enjoy the lifestyle of exclusive North Avalon. The design
+                    provides deluxe beachside seniors living.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div
+                  class="projects-item"
+                  onclick="displayProject('narrabeen')"
+                >
                   <div class="projects-item-title">Narrabeen</div>
                   <div class="projects-item-info">
                     2020-2022 // Environa Studio // Private
                   </div>
                 </div>
+                <div class="projects-container" id="project-narrabeen">
+                  <img
+                    class="projects-image"
+                    id="narrabeenImage"
+                    src="./assets/projects/project_narrabeen.png"
+                    alt="narrabeen"
+                  />
+                  <p class="projects-text">
+                    Beach St, Narrabeen is an innovative modern take on deluxe
+                    sea-side design. The use of mutliple pavilions to
+                    differentiate between multiple private and public spaces
+                    creates a unique and special home that looks to maximise on
+                    the natural surrounding beauty.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div
+                  class="projects-item"
+                  onclick="displayProject('elizabeth')"
+                >
                   <div class="projects-item-title">Elizabeth Bay</div>
                   <div class="projects-item-info">
                     2020-2022 // Environa Studio // Private
                   </div>
                 </div>
+                <div class="projects-container" id="project-elizabeth">
+                  <img
+                    class="projects-image"
+                    id="elizabethImage"
+                    src="./assets/projects/project_elizabeth.jpg"
+                    alt="elizabeth"
+                  />
+                  <p class="projects-text">
+                    An innovative design that looks to integrate key worker
+                    housing into one of Sydney's richest and affluent areas. The
+                    goal of the design was to create quality inner-city housing
+                    for key-workers within Sydneys CBD. The building itself
+                    serves as an extension to the heritage listed home already
+                    situated on the site.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div class="projects-item" onclick="displayProject('coogee')">
                   <div class="projects-item-title">Coogee</div>
                   <div class="projects-item-info">
                     2020-2021 // Environa Studio // Private
                   </div>
                 </div>
+                <div class="projects-container" id="project-coogee">
+                  <img
+                    class="projects-image"
+                    id="coogeeImage"
+                    src="./assets/projects/project_coogee.png"
+                    alt="coogee"
+                  />
+                  <p class="projects-text">
+                    Mount St, Coogee is a high-quality, modern apartment
+                    building which looks to provide deluxe living using modern
+                    design principles to create diverse living spaces. The use
+                    of sustainable materials and detailing creates apartments
+                    that are spacious and curated to the user.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div class="projects-item" onclick="displayProject('portman')">
                   <div class="projects-item-title">Portman Street</div>
                   <div class="projects-item-info">
                     2020-2021 // Environa Studio // Private
                   </div>
                 </div>
+                <div class="projects-container" id="project-portman">
+                  <img
+                    class="projects-image"
+                    id="portmanImage"
+                    src="./assets/projects/project_portman.jpg"
+                    alt="portman"
+                  />
+                  <p class="projects-text">
+                    A deluxe, high quality dual-townhouse in the inner-west of
+                    Sydney. The design aims to fit seamlessly into the current
+                    surroundings, whilst providing a modern and innovative
+                    approach to traditional design. The use of modern and
+                    sustainable materials, as well as the incorporation of light
+                    wells creates spaces that are inviting and welcoming.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div
+                  class="projects-item"
+                  onclick="displayProject('transitions')"
+                >
                   <div class="projects-item-title">Transitions</div>
                   <div class="projects-item-info">
                     2019 // University of Sydney // Portfolio
                   </div>
                 </div>
+                <div class="projects-container" id="project-transitions">
+                  <img
+                    class="projects-image"
+                    id="transitionsImage"
+                    src="./assets/projects/project_transitions.jpg"
+                    alt="transitions"
+                  />
+                  <p class="projects-text">
+                    Transitions looks to continue the natural gradient and
+                    transition between the architecture of the city and the
+                    landscape of the Domain. The theatre uses geometric and
+                    parametric design intertwined with aesthetic and organic
+                    form to act as a mediator between the city and domain.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div class="projects-item" onclick="displayProject('oasis')">
                   <div class="projects-item-title">Urban Oasis</div>
                   <div class="projects-item-info">
                     2019 // University of Sydney // Portfolio
                   </div>
                 </div>
+                <div class="projects-container" id="project-oasis">
+                  <img
+                    class="projects-image"
+                    id="oasisImage"
+                    src="./assets/projects/project_oasis.png"
+                    alt="oasis"
+                  />
+                  <p class="projects-text">
+                    Urban Oasis is a large voluminous catenary swimming centre
+                    that aims to create seemless transitions between closed and
+                    open spaces as well as a full acoustic, visual and sensual
+                    experience of water with a beautiful engagement with timber
+                    as a structural material.
+                  </p>
+                </div>
 
-                <div class="projects-item">
+                <div class="projects-item" onclick="displayProject('housing')">
                   <div class="projects-item-title">Stanmore Housing</div>
                   <div class="projects-item-info">
                     2018 // University of Sydney // Portfolio
                   </div>
+                </div>
+                <div class="projects-container" id="project-housing">
+                  <img
+                    class="projects-image"
+                    id="housingImage"
+                    src="./assets/projects/project_housing.png"
+                    alt="housing"
+                  />
+                  <p class="projects-text">
+                    This studio project focussed on the creation of layers
+                    between spaces, with access to sunlight, privacy and
+                    simplicity of spatial arrangement central to the design
+                    process. The housing project has been designed to facilitate
+                    middle-aged homeless womens growth and development in a safe
+                    and comfortable environment.
+                  </p>
                 </div>
               </div>
             </div>

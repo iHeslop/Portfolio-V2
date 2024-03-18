@@ -429,6 +429,38 @@ p {
     padding-bottom: 0px;
     padding-top: 100px;
   }
+  &-container {
+    display: none;
+    flex-direction: column;
+    justify-content: right;
+    width: 60%;
+    height: auto;
+    border: 1px solid var(--c-txt);
+    padding: 1rem;
+    animation: fadeIn 0.8s ease-in;
+    @include queries.small {
+      width: 100%;
+      height: auto;
+    }
+    @include queries.medium {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-image {
+    height: 80%;
+  }
+  &-text {
+    margin-top: 2%;
+    padding-left: 20%;
+    width: 100%;
+    text-align: right;
+    @include queries.small {
+      font-size: 11px;
+      padding-left: 0;
+    }
+  }
   &-title {
     font-family: "Grand-Slang";
     font-weight: 100;
@@ -484,6 +516,7 @@ p {
       align-items: flex-end;
     }
     &:hover {
+      cursor: pointer;
       opacity: 0.4;
     }
     &-title {
