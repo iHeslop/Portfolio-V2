@@ -389,7 +389,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  opacity: 0.6;
+  opacity: 0.8;
   margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
@@ -398,13 +398,15 @@ p {
     font-size: 11px;
   }
 }
-.nav-links-list-item:hover {
-  opacity: 0.9;
-  text-decoration: line-through;
-}
-.nav-links-list-item:hover span {
-  width: 2rem;
-  opacity: 1;
+@media only screen and (min-width: 1025px) {
+  .nav-links-list-item:hover {
+    opacity: 0.9;
+    text-decoration: line-through;
+  }
+  .nav-links-list-item:hover span {
+    width: 2rem;
+    opacity: 1;
+  }
 }
 .nav-line {
   display: block;

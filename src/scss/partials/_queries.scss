@@ -12,3 +12,9 @@ $md: 1024px;
     @content;
   }
 }
+
+@mixin large {
+  @media only screen and (min-width: ($md + 1px)) {
+    @content;
+  }
+}

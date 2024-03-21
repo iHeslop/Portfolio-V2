@@ -348,18 +348,20 @@ p {
         flex-direction: row;
         align-items: center;
         justify-content: left;
-        opacity: 0.6;
+        opacity: 0.8;
         margin-top: 20px;
         @include queries.small {
           margin-top: 10px;
           font-size: 11px;
         }
-        &:hover {
-          opacity: 0.9;
-          text-decoration: line-through;
-          span {
-            width: 2rem;
-            opacity: 1;
+        @include queries.large {
+          &:hover {
+            opacity: 0.9;
+            text-decoration: line-through;
+            span {
+              width: 2rem;
+              opacity: 1;
+            }
           }
         }
       }
