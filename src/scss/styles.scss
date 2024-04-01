@@ -538,10 +538,13 @@ p {
       justify-content: flex-start;
       align-items: flex-end;
     }
-    &:hover {
-      cursor: pointer;
-      opacity: 0.4;
+    @include queries.large {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.4;
+      }
     }
+
     &-title {
       font-family: "Grand-Slang";
       text-align: right;
@@ -556,8 +559,10 @@ p {
       @include queries.medium {
         font-size: 40px;
       }
-      &:hover {
-        font-style: italic;
+      @include queries.large {
+        &:hover {
+          font-style: italic;
+        }
       }
     }
     &-info {

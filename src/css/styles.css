@@ -607,9 +607,11 @@ p {
     align-items: flex-end;
   }
 }
-.projects-item:hover {
-  cursor: pointer;
-  opacity: 0.4;
+@media only screen and (min-width: 1025px) {
+  .projects-item:hover {
+    cursor: pointer;
+    opacity: 0.4;
+  }
 }
 .projects-item-title {
   font-family: "Grand-Slang";
@@ -630,8 +632,10 @@ p {
     font-size: 40px;
   }
 }
-.projects-item-title:hover {
-  font-style: italic;
+@media only screen and (min-width: 1025px) {
+  .projects-item-title:hover {
+    font-style: italic;
+  }
 }
 .projects-item-info {
   font-family: "Montserrat";
