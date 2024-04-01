@@ -217,7 +217,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .header-heading {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -233,7 +233,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .header-text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

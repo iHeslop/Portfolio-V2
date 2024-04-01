@@ -196,7 +196,7 @@ p {
       }
     }
     @include queries.small {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 0.5rem;
     }
     @include queries.medium {
@@ -208,7 +208,7 @@ p {
     font-size: 13px;
     letter-spacing: 0.5px;
     @include queries.small {
-      font-size: 12px;
+      font-size: 11px;
     }
     @include queries.medium {
       font-size: 13px;
