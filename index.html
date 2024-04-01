@@ -10,10 +10,11 @@
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
     /
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/125b5d6a5b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="./src/js/script.js" defer></script>
   </head>
   <body>
@@ -39,19 +40,31 @@
 
       <div class="social-links">
         <div class="social-icon">
-          <a href="https://www.linkedin.com/in/isaac-heslop/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/isaac-heslop/"
+            target="_blank"
+            aria-label="LinkedIn Link"
+          >
             <i class="fa fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
 
         <div class="social-icon">
-          <a href="https://www.instagram.com/heslop_designs/" target="_blank">
+          <a
+            href="https://www.instagram.com/heslop_designs/"
+            target="_blank"
+            aria-label="Instagram Link"
+          >
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </div>
 
         <div class="social-icon">
-          <a href="https://github.com/iHeslop" target="_blank">
+          <a
+            href="https://github.com/iHeslop"
+            target="_blank"
+            aria-label="Github Link"
+          >
             <i class="fa fa-github" aria-hidden="true"></i>
           </a>
         </div>
@@ -59,16 +72,18 @@
         <div class="social-line"></div>
         <div class="social-icon__copyright">
           <p class="copyright">&copy;/2024</p>
-          <div class="theme">
-            <button
-              class="theme__light"
-              onclick="changeTheme('light')"
-            ></button>
-            <button class="theme__dark" onclick="changeTheme('dark')"></button>
-          </div>
         </div>
       </div>
-
+      <div class="theme">
+        <div class="theme-container" onclick="changeTheme('light')">
+          <button class="theme__light"></button>
+          <p class="theme-text">LIGHT</p>
+        </div>
+        <div class="theme-container" onclick="changeTheme('dark')">
+          <button class="theme__dark"></button>
+          <p class="theme-text">DARK</p>
+        </div>
+      </div>
       <div class="main-section">
         <div class="header">
           <div>
@@ -141,6 +156,26 @@
               <div class="projects-list">
                 <a
                   class="projects-item"
+                  href="https://morse-code-translator-8x2b.onrender.com/"
+                  target="_blank"
+                >
+                  <div class="projects-item-title">Morse Code Translator</div>
+                  <div class="projects-item-info">
+                    2024 // Project // Public
+                  </div>
+                </a>
+                <a
+                  class="projects-item"
+                  href="https://windows98-replica.onrender.com/"
+                  target="_blank"
+                >
+                  <div class="projects-item-title">Windows 98</div>
+                  <div class="projects-item-info">
+                    2024 // Project // Public
+                  </div>
+                </a>
+                <a
+                  class="projects-item"
                   href="https://asquithlegal.com.au/"
                   target="_blank"
                 >
@@ -191,7 +226,7 @@
                 </a>
               </div>
             </div>
-            <div class="projects">
+            <div class="projects-section">
               <h4 class="projects-heading">Architecture</h4>
               <div class="projects-list">
                 <div class="projects-item" onclick="displayProject('wsw')">

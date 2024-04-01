@@ -72,7 +72,7 @@ p {
 
 .enterView {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   left: 0;
   top: 0;
   width: 100%;
@@ -156,6 +156,7 @@ p {
 @media only screen and (max-width: 768px) {
   .mask-top {
     border-bottom: 0px;
+    height: 8%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -258,7 +259,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 8%;
     width: 100vw;
     padding-top: 0;
   }
@@ -274,7 +275,7 @@ p {
   }
 }
 .social-icon {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 768px) {
   .social-icon {
@@ -289,11 +290,12 @@ p {
   }
 }
 .social-icon__copyright {
+  display: flex;
+  justify-content: flex-end;
   width: 110px;
   position: absolute;
   top: auto;
-  bottom: 13vh;
-  transform: rotate(-90deg);
+  bottom: 15vh;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -304,6 +306,7 @@ p {
     position: relative;
     transform: none;
     bottom: 0;
+    left: 0;
     gap: 15px;
   }
 }
@@ -321,14 +324,14 @@ p {
 }
 .social-line {
   width: 1px;
-  height: 50%;
+  height: 55%;
   background-color: var(--c-txt);
   margin-top: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 768px) {
   .social-line {
-    width: 30%;
+    width: 40%;
     height: 1px;
     margin-bottom: 0;
     margin-top: 0;
@@ -338,7 +341,7 @@ p {
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .social-line {
-    width: 50%;
+    width: 40%;
     height: 1px;
     margin-bottom: 0;
     margin-top: 0;
@@ -348,10 +351,19 @@ p {
 }
 
 .theme {
-  position: relative;
+  z-index: 3;
+  position: fixed;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
-  left: 0;
+  left: 2.7%;
+  bottom: 6%;
+}
+.theme-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .theme__light {
   height: 10px;
@@ -366,6 +378,21 @@ p {
   background-color: #1a1818;
   border: 1px solid #ece7e1;
   cursor: pointer;
+}
+.theme-text {
+  font-size: 12px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .theme-text {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .theme {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 .copyright {

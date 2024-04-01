@@ -72,7 +72,7 @@ p {
 
 .enterView {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   left: 0;
   top: 0;
   width: 100%;
@@ -145,6 +145,7 @@ p {
     z-index: 1;
     @include queries.small {
       border-bottom: 0px;
+      height: 8%;
     }
     @include queries.medium {
       border-bottom: 0px;
@@ -231,7 +232,7 @@ p {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      height: 10%;
+      height: 8%;
       width: 100vw;
       padding-top: 0;
     }
@@ -245,7 +246,7 @@ p {
     }
   }
   &-icon {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     @include queries.small {
       margin-bottom: 0;
       margin-left: 12px;
@@ -255,11 +256,12 @@ p {
       margin-left: 30px;
     }
     &__copyright {
+      display: flex;
+      justify-content: flex-end;
       width: 110px;
       position: absolute;
       top: auto;
-      bottom: 13vh;
-      transform: rotate(-90deg);
+      bottom: 15vh;
       display: flex;
       gap: 20px;
       align-items: center;
@@ -268,6 +270,7 @@ p {
         position: relative;
         transform: none;
         bottom: 0;
+        left: 0;
         gap: 15px;
       }
       @include queries.medium {
@@ -284,12 +287,12 @@ p {
   }
   &-line {
     width: 1px;
-    height: 50%;
+    height: 55%;
     background-color: var(--c-txt);
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     @include queries.small {
-      width: 30%;
+      width: 40%;
       height: 1px;
       margin-bottom: 0;
       margin-top: 0;
@@ -297,7 +300,7 @@ p {
       margin-right: 30px;
     }
     @include queries.medium {
-      width: 50%;
+      width: 40%;
       height: 1px;
       margin-bottom: 0;
       margin-top: 0;
@@ -308,10 +311,19 @@ p {
 }
 
 .theme {
-  position: relative;
+  z-index: 3;
+  position: fixed;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
-  left: 0;
+  left: 2.7%;
+  bottom: 6%;
+  &-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
   &__light {
     height: 10px;
     width: 10px;
@@ -325,6 +337,17 @@ p {
     background-color: #1a1818;
     border: 1px solid #ece7e1;
     cursor: pointer;
+  }
+  &-text {
+    font-size: 12px;
+    cursor: pointer;
+    @include queries.small {
+      font-size: 10px;
+    }
+  }
+  @include queries.small {
+    flex-direction: column;
+    gap: 5px;
   }
 }
 
