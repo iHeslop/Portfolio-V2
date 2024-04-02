@@ -307,7 +307,8 @@ p {
     transform: none;
     bottom: 0;
     left: 0;
-    gap: 15px;
+    width: auto;
+    margin-right: 2%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -317,6 +318,7 @@ p {
     transform: none;
     bottom: 0;
     gap: 15px;
+    width: auto;
   }
 }
 .social-icon:hover {
@@ -846,7 +848,6 @@ p {
 @media only screen and (max-width: 768px) {
   .contact {
     gap: 10vh;
-    padding-top: 25%;
   }
 }
 .contact-title {
