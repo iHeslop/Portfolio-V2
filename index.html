@@ -17,7 +17,13 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
     <script
       src="https://kit.fontawesome.com/125b5d6a5b.js"
       crossorigin="anonymous"
@@ -84,11 +90,19 @@
       </div>
       <div class="theme">
         <div class="theme-container" onclick="changeTheme('light')">
-          <button class="theme__light" name="lightTheme"></button>
+          <button
+            id="lightTheme"
+            class="theme__light"
+            aria-label="Light Mode"
+          ></button>
           <p class="theme-text">LIGHT</p>
         </div>
         <div class="theme-container" onclick="changeTheme('dark')">
-          <button class="theme__dark" name="darkTheme"></button>
+          <button
+            id="darkTheme"
+            class="theme__dark"
+            aria-label="Dark Mode"
+          ></button>
           <p class="theme-text">DARK</p>
         </div>
       </div>
