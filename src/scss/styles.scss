@@ -32,6 +32,12 @@ a {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/font/Montserrat-VariableFont_wght.ttf");
+  font-display: swap;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
