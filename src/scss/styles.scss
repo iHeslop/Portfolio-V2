@@ -147,7 +147,6 @@ p {
     z-index: 1;
     @include queries.small {
       border-bottom: 0px;
-      height: 8%;
     }
     @include queries.medium {
       border-bottom: 0px;
