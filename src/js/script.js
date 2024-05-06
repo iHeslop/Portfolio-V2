@@ -21,10 +21,10 @@ let navLinks = document.querySelectorAll(".nav-links-list-item");
 let options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5,
+  threshold: 0.2,
 };
 
-let observer = new IntersectionObserver((entries, observer) => {
+let observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       let id = entry.target.getAttribute("id");
