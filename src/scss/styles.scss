@@ -455,6 +455,28 @@ p {
     padding-bottom: 0px;
     padding-top: 100px;
   }
+  &-links {
+    display: none;
+    justify-content: right;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem;
+    padding-right: 1em;
+    gap: 1em;
+    animation: fadeIn 0.8s ease-in;
+    &_item {
+      font-size: 24px;
+      animation: fadeIn 0.8s ease-in;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    @include queries.small {
+      height: 20px;
+      padding-right: 0.5em;
+      gap: 1.2em;
+    }
+  }
   &-container {
     display: none;
     flex-direction: column;

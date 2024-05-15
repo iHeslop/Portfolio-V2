@@ -506,6 +506,30 @@ p {
     padding-top: 100px;
   }
 }
+.projects-links {
+  display: none;
+  justify-content: right;
+  align-items: center;
+  height: auto;
+  padding: 0.5rem;
+  padding-right: 1em;
+  gap: 1em;
+  animation: fadeIn 0.8s ease-in;
+}
+.projects-links_item {
+  font-size: 24px;
+  animation: fadeIn 0.8s ease-in;
+}
+.projects-links_item:hover {
+  opacity: 0.5;
+}
+@media only screen and (max-width: 768px) {
+  .projects-links {
+    height: 20px;
+    padding-right: 0.5em;
+    gap: 1.2em;
+  }
+}
 .projects-container {
   display: none;
   flex-direction: column;

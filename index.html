@@ -161,106 +161,267 @@
             <div class="projects-section">
               <h4 class="projects-heading">Software</h4>
               <div class="projects-list">
-                <a
+                <div
                   class="projects-item"
-                  href="https://solescape.onrender.com/"
-                  target="_blank"
+                  onclick="displayProject('solescape')"
                 >
                   <div class="projects-item-title">Solescape</div>
                   <div class="projects-item-info">
                     2024 // Project // Public
                   </div>
-                </a>
-                <a
+                </div>
+                <div class="projects-links" id="project-solescape">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://solescape.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/Solescape"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div
                   class="projects-item"
-                  href="https://github.com/iHeslop/java-minesweeper"
-                  target="_blank"
+                  onclick="displayProject('minesweeper')"
                 >
                   <div class="projects-item-title">Java CLI Minesweeper</div>
                   <div class="projects-item-info">
                     2024 // Project // Public
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="https://google-books-se.onrender.com/"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-minesweeper">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/java-minesweeper"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('search')">
                   <div class="projects-item-title">Google Books SE</div>
                   <div class="projects-item-info">
                     2024 // Project // Public
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="https://morse-code-translator-8x2b.onrender.com/"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-search">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://google-books-se.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/search-engine"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('morse')">
                   <div class="projects-item-title">Morse Code Translator</div>
                   <div class="projects-item-info">
                     2024 // Project // Public
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="https://windows98-replica.onrender.com/"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-morse">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://morse-code-translator-8x2b.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/Morse-Code-Translator"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('windows')">
                   <div class="projects-item-title">Windows 98</div>
                   <div class="projects-item-info">
                     2024 // Project // Public
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="https://asquithlegal.com.au/"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-windows">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://windows98-replica.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/Windows98"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('asquith')">
                   <div class="projects-item-title">Asquith Legal</div>
                   <div class="projects-item-info">
                     2024 // Commission // Private
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="https://mirage-corporation.onrender.com"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-asquith">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://asquithlegal.com.au/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('mirage')">
                   <div class="projects-item-title">Mirage Corporation</div>
                   <div class="projects-item-info">
                     2024 // Website // Personal
                   </div>
-                </a>
-                <a
+                </div>
+                <div class="projects-links" id="project-mirage">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://mirage-corporation.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/Mirage-Corporation"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div
                   class="projects-item"
-                  href="https://flytinerary.onrender.com/"
-                  target="_blank"
+                  onclick="displayProject('flytinerary')"
                 >
                   <div class="projects-item-title">FlyTinerary</div>
                   <div class="projects-item-info">
                     2023 // Capstone // Institute of Data
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="http://kidsplan-it.com.au/"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-flytinerary">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://flytinerary.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/FlyTinerary"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('kidsplan')">
                   <div class="projects-item-title">Kids Plan-It</div>
                   <div class="projects-item-info">
                     2023 // Commission // Private
                   </div>
-                </a>
-                <a
-                  class="projects-item"
-                  href="https://honour-abyss.onrender.com/"
-                  target="_blank"
-                >
+                </div>
+                <div class="projects-links" id="project-kidsplan">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://kidsplan-it.com.au/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="projects-item" onclick="displayProject('honour')">
                   <div class="projects-item-title">Honour Abyss</div>
                   <div class="projects-item-info">
                     2022 // Tutorial // Personal
                   </div>
-                </a>
+                </div>
+                <div class="projects-links" id="project-honour">
+                  <p class="projects-text">Links:</p>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://honour-abyss.onrender.com/"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa-solid fa-globe"></i>
+                    </p>
+                  </a>
+                  <a
+                    class="projects-text projects-links_item"
+                    href="https://github.com/iHeslop/Honour-Abyss"
+                    target="_blank"
+                  >
+                    <p class="projects-text">
+                      <i class="fa fa-github"></i>
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="projects-section">
