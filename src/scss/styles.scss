@@ -702,7 +702,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 40px;
     @include queries.small {
       width: 100%;
@@ -736,8 +737,7 @@ p {
       position: absolute;
       display: none;
       font-family: "Montserrat";
-      margin-top: 5px;
-      bottom: -22px;
+      bottom: -25px;
       width: auto;
       padding: 5px;
       box-sizing: border-box;

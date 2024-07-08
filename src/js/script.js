@@ -83,50 +83,49 @@ let isDarkTheme = false;
 
 function changeTheme(theme) {
   const root = document.documentElement;
-  const alpine = document.querySelector(".exp-alpine");
+  const typescript = document.querySelector(".exp-typescript");
   const css = document.querySelector(".exp-css");
-  const docker = document.querySelector(".exp-docker");
+  const java = document.querySelector(".exp-java");
   const git = document.querySelector(".exp-git");
   const html = document.querySelector(".exp-html");
   const js = document.querySelector(".exp-js");
   const node = document.querySelector(".exp-node");
   const react = document.querySelector(".exp-react");
+  const mysql = document.querySelector(".exp-mysql");
+  const scss = document.querySelector(".exp-sass");
+  const python = document.querySelector(".exp-python");
+  const wordpress = document.querySelector(".exp-wordpress");
   if (theme === "light" && isDarkTheme) {
     root.style.setProperty("--c-bg", "#ece7e1");
     root.style.setProperty("--c-txt", "#1a1818");
-    alpine.src = "/assets/tech/alpine-black.png";
+    typescript.src = "/assets/tech/typescript-black.png";
     css.src = "/assets/tech/css-black.png";
-    docker.src = "/assets/tech/docker-black.png";
+    java.src = "/assets/tech/java-black.png";
     git.src = "/assets/tech/git-black.png";
     html.src = "/assets/tech/html-black.png";
     js.src = "/assets/tech/javascript-black.png";
     node.src = "/assets/tech/nodejs-black.png";
     react.src = "/assets/tech/reactjs-black.png";
+    mysql.src = "/assets/tech/mysql-black.png";
+    scss.src = "/assets/tech/sass-black.png";
+    python.src = "/assets/tech/python-black.png";
+    wordpress.src = "/assets/tech/wordpress-black.png";
     isDarkTheme = false;
   } else if (theme === "dark" && !isDarkTheme) {
     root.style.setProperty("--c-bg", "#1a1818");
     root.style.setProperty("--c-txt", "#ece7e1");
-    alpine.src = "/assets/tech/alpine-white.png";
+    typescript.src = "/assets/tech/typescript-white.png";
     css.src = "/assets/tech/css-white.png";
-    docker.src = "/assets/tech/docker-white.png";
+    java.src = "/assets/tech/java-white.png";
     git.src = "/assets/tech/git-white.png";
     html.src = "/assets/tech/html-white.png";
     js.src = "/assets/tech/javascript-white.png";
     node.src = "/assets/tech/nodejs-white.png";
     react.src = "/assets/tech/reactjs-white.png";
+    mysql.src = "/assets/tech/mysql-white.png";
+    scss.src = "/assets/tech/sass-white.png";
+    python.src = "/assets/tech/python-white.png";
+    wordpress.src = "/assets/tech/wordpress-white.png";
     isDarkTheme = true;
-  }
-}
-
-// Display Project
-
-function displayProject(id) {
-  let project = document.getElementById("project-" + id);
-  if (!project.classList.contains("active")) {
-    project.style.display = "flex";
-    project.classList.add("active");
-  } else {
-    project.style.display = "none";
-    project.classList.remove("active");
   }
 }
