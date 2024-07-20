@@ -129,3 +129,16 @@ function changeTheme(theme) {
     isDarkTheme = true;
   }
 }
+
+// Display Project
+
+function displayProject(id) {
+  let project = document.getElementById("project-" + id);
+  if (!project.classList.contains("active")) {
+    project.style.display = "flex";
+    project.classList.add("active");
+  } else {
+    project.style.display = "none";
+    project.classList.remove("active");
+  }
+}
